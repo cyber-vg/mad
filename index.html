@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/4db8a870f3.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fungama(Fell Music)</title>
+  </head>
+  <body>
+    <div class="phone">
+      <div class="body">
+        <div class="info">
+          <div class="now-playing">PLAYING song OF artist</div>
+          <div>
+            <div class="track-art"></div>
+          </div>
+          <div class="track-name">Track Name</div>
+          <div class="track-artist">Track Artist</div>
+        </div>
+        <div class="buttons">
+          <div class="prev" onclick="prev()">
+            <i
+              class="fa-solid fa-backward-step fa-2xl"
+              style="color: #f3f4a9"
+            ></i>
+          </div>
+          <div class="play" onclick="play(  )">
+            <i class="fa-solid fa-play fa-2xl" style="color: #f3f4a9"></i>
+          </div>
+          <div class="forwd" onclick="forwd()">
+            <i
+              class="fa-solid fa-forward-step fa-2xl"
+              style="color: #f0f5a8"
+            ></i>
+          </div>
+        </div>
+        <div class="slider">
+          <div class="current">00:00</div>
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="0"
+            class="seek-slider"
+            onchange="seekTo()"
+          />
+          <div class="duration">00:00</div>
+        </div>
+        <div class="slider">
+          <i class="fa fa-volume-down"></i>
+          <input type="range" min="1" max="100"
+            value="99" class="volume_slider" onchange="setVolume()">
+          <i class="fa fa-volume-up"></i>
+        </div>
+      </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
